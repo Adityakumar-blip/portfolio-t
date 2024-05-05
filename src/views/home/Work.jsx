@@ -1,6 +1,6 @@
+import React from "react";
 import WorkCard from "@/components/WorkCard";
 import { useRouter } from "next/router";
-import React from "react";
 
 const Work = () => {
   const router = useRouter();
@@ -27,25 +27,30 @@ const Work = () => {
     },
   ];
   return (
-    <div className="text-center">
-      <div className="columns-1 sm:columns-2 lg:columns-2 px-4 pt-[15px]  md:pt-[65px]">
-        {data.map((image, index) => (
-          <WorkCard
-            src={image.src}
-            title={image.title}
-            key={index}
-            onClick={() => {
-              router.push(image.link);
-            }}
-          />
-        ))}
+    <div className="px-4">
+      <div>
+        <p className="text-black">Recent Works</p>
       </div>
-      {/* <button
+      <div className="text-center mt-[30px]">
+        <div className="columns-1 sm:columns-2 lg:columns-2  ">
+          {data.map((image, index) => (
+            <WorkCard
+              src={image.src}
+              title={image.title}
+              key={index}
+              onClick={() => {
+                router.push(image.link);
+              }}
+            />
+          ))}
+        </div>
+        {/* <button
         type="button"
         class="py-2.5 w-[200px] px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
       >
         See All Work
       </button> */}
+      </div>
     </div>
   );
 };

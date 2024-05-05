@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 const About = () => {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.set("#creating, #marketing, #odyssey", { opacity: 0, y: 50 });
+
+    tl.to("#creating", { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+      .to(
+        "#marketing",
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+        "-=0.5"
+      )
+      .to(
+        "#odyssey",
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+        "-=0.5"
+      );
+  }, []);
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
         <div className="text-center md:text-left">
-          <p className="text-7xl md:text-8xl text-black">Creating</p>
-          <p className="text-7xl md:text-8xl text-black">Marketing</p>
-          <p className="text-7xl md:text-8xl text-black">Odyssey</p>
+          <p id="creating" className="text-7xl md:text-8xl text-black">
+            Creating
+          </p>
+          <p id="marketing" className="text-7xl md:text-8xl text-black">
+            Marketing
+          </p>
+          <p id="odyssey" className="text-7xl md:text-8xl text-black">
+            Odyssey
+          </p>
           <button
             type="button"
             className="py-2.5 px-5 text-sm font-medium focus:outline-none bg-white rounded-full border border-gray-200 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 text-black dark:border-gray-600 mt-10"
