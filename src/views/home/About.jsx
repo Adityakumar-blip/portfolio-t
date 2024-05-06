@@ -1,24 +1,24 @@
 import React, { useEffect } from "react";
-import { gsap } from "gsap";
+// import { gsap } from "/node_modules/gsap/gsap-core.js";
 
 const About = () => {
-  useEffect(() => {
-    const tl = gsap.timeline();
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
 
-    tl.set("#creating, #marketing, #odyssey", { opacity: 0, y: 50 });
+  //   tl.set("#creating, #marketing, #odyssey", { opacity: 0, y: 50 });
 
-    tl.to("#creating", { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
-      .to(
-        "#marketing",
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
-        "-=0.5"
-      )
-      .to(
-        "#odyssey",
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
-        "-=0.5"
-      );
-  }, []);
+  //   tl.to("#creating", { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+  //     .to(
+  //       "#marketing",
+  //       { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+  //       "-=0.5"
+  //     )
+  //     .to(
+  //       "#odyssey",
+  //       { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+  //       "-=0.5"
+  //     );
+  // }, []);
 
   return (
     <div className="flex justify-center items-center h-screen">

@@ -1,41 +1,41 @@
 import React, { useRef, useEffect } from "react";
-import { Draggable } from "gsap/all";
-import { gsap } from "gsap";
+// import { Draggable } from "gsap/all";
+// import gsap from "gsap";
 
 const Footer = () => {
-  const textRef = useRef(null);
+  // const textRef = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(Draggable);
-    Draggable.create(textRef.current, {
-      type: "x,y",
-      edgeResistance: 0.65,
-    });
+  // useEffect(() => {
+  //   gsap.registerPlugin(Draggable);
+  //   Draggable.create(textRef.current, {
+  //     type: "x,y",
+  //     edgeResistance: 0.65,
+  //   });
 
-    const textAnimation = gsap.to(textRef.current, {
-      scale: 1.2,
-      yoyo: true,
-      repeat: -1,
-      duration: 0.5,
-      paused: true,
-    });
+  //   const textAnimation = gsap.to(textRef.current, {
+  //     scale: 1.2,
+  //     yoyo: true,
+  //     repeat: -1,
+  //     duration: 0.5,
+  //     paused: true,
+  //   });
 
-    textRef.current.addEventListener("mouseenter", () => {
-      textAnimation.play();
-    });
+  //   textRef.current.addEventListener("mouseenter", () => {
+  //     textAnimation.play();
+  //   });
 
-    textRef.current.addEventListener("mouseleave", () => {
-      textAnimation.pause();
-      gsap.to(textRef.current, { scale: 1, duration: 0.5 });
-    });
-  }, []);
+  //   textRef.current.addEventListener("mouseleave", () => {
+  //     textAnimation.pause();
+  //     gsap.to(textRef.current, { scale: 1, duration: 0.5 });
+  //   });
+  // }, []);
 
   return (
     <footer className="p-4">
       <div className="p-4 rounded-lg bg-black">
         <p
-          ref={textRef}
-          className="text-white text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] xl:text-[14rem] text-center font-mono font-semibold"
+          // ref={textRef}
+          className="text-white  text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] xl:text-[14rem] text-center font-sans "
         >
           Tannu Singh
         </p>
@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row pt-4 ">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <p className="text-black text-2xl lg:text-6xl">Now!</p>
-          <p className="text-black text-2xl lg:text-6xl">
+          <p className="text-black text-2xl lg:text-6xl font-sans">
             Let's Discuss Your Project
           </p>
         </div>

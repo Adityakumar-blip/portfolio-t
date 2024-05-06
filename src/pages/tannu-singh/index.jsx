@@ -8,22 +8,22 @@ import ServiceHover from "@/components/ServiceHover";
 import Services from "@/views/home/Services";
 import Footer from "@/views/home/Footer";
 
-import gsap from "gsap";
+// import { gsap } from "gsap/gsap-core";
 
 const index = () => {
-  useEffect(() => {
-    const tl = gsap.timeline();
+  // useEffect(() => {
+  //   const tl = gsap.timeline();
 
-    tl.set("#brand, #marketing", { opacity: 0, y: 50 });
+  //   tl.set("#brand, #marketing", { opacity: 0, y: 50 });
 
-    tl.to("#brand, #marketing", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      stagger: 0.5,
-      ease: "power2.out",
-    });
-  }, []);
+  //   tl.to("#brand, #marketing", {
+  //     opacity: 1,
+  //     y: 0,
+  //     duration: 1,
+  //     stagger: 0.5,
+  //     ease: "power2.out",
+  //   });
+  // }, []);
   return (
     <div className="w-full">
       <Navbar />
