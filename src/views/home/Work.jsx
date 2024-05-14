@@ -7,23 +7,23 @@ const Work = () => {
   const data = [
     {
       src: "https://images.unsplash.com/photo-1682932006997-91aa688fb5c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyZnVtZSUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
-      title: "Image 1",
-      link: "#",
+      title: "Al-Mujjamil",
+      link: "1",
     },
     {
       src: "https://images.unsplash.com/photo-1630082900894-edbd503588f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFNoYW1wb298ZW58MHx8MHx8fDA%3D",
-      title: "Image 2",
-      link: "#",
+      title: "Zenio-Feel the Skin",
+      link: "2",
     },
     {
       src: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D",
-      title: "Image 3",
-      link: "#",
+      title: "SolutionOne ERP",
+      link: "3",
     },
     {
       src: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Image 4",
-      link: "#",
+      title: "Bholanath Ayurveda",
+      link: "4",
     },
   ];
   return (
@@ -39,7 +39,10 @@ const Work = () => {
               title={image.title}
               key={index}
               onClick={() => {
-                router.push(image.link);
+                router.push({
+                  pathname: "/case-study",
+                  query: image.link,
+                });
               }}
             />
           ))}

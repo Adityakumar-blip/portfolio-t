@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 const WorkCard = ({ src, title, onClick }) => {
+  const router = useRouter();
   return (
-    <div className="mb-4 overflow-hidden">
+    <div className="mb-4 overflow-hidden" onClick={onClick}>
       <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img
