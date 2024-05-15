@@ -5,8 +5,16 @@ import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
 import img4 from "../assets/img4.jpg";
 import img5 from "../assets/img5.jpg";
+import img8 from "../assets/img8.jpg";
+import img9 from "../assets/img9.jpg";
+import img10 from "../assets/img10.jpg";
+
 import img6 from "../assets/img6.jpg";
 import img7 from "../assets/img7.jpg";
+
+import img11 from "../assets/img11.jpg";
+import img12 from "../assets/img12.jpg";
+
 import instagram from "../assets/instagram.png";
 
 const Testimonial = ({ props }) => {
@@ -60,6 +68,18 @@ const Testimonial = ({ props }) => {
           id: 5,
           src: img5,
         },
+        {
+          id: 6,
+          src: img8,
+        },
+        {
+          id: 7,
+          src: img9,
+        },
+        {
+          id: 8,
+          src: img10,
+        },
       ],
       conclusion:
         "In an industry driven by sensory experiences and emotional connections, Al-Muzzamil has emerged as a shining example of how strategic marketing and customer-centricity can propel a brand to success. By harnessing the power of social media, compelling storytelling, and personalized engagement, Al-Muzzamil has not only carved a niche for itself but has also set new standards for excellence in the perfume industry. With a steadfast commitment to innovation and customer satisfaction, Al-Muzzamil is poised to continue its journey towards becoming a global fragrance powerhouse.",
@@ -67,55 +87,43 @@ const Testimonial = ({ props }) => {
     },
     {
       id: 2,
-      name: "Zenio - Feel the Skin",
-      img: "https://www.zenio.co.in/cdn/shop/files/zenio_web_banner_below_abt_us_2_a.jpg?v=1697538257&width=1500",
+      name: "Brand Buzzar - Digital Marketing Agency",
+      img: "https://img.freepik.com/free-vector/digital-marketing-concept-with-online-advertising-media-symbols-flat_1284-31958.jpg?size=626&ext=jpg&ga=GA1.1.128595269.1715744696&semt=ais_user",
       intro:
-        "Zenio - Feel the Skin, a luxurious skincare brand, has redefined beauty rituals with its holistic approach to skincare. Offering a range of premium products crafted from natural ingredients, Zenio embodies the essence of self-care and rejuvenation. Despite its exceptional products, Zenio faced challenges in reaching its target audience and establishing a strong online presence.",
+        "Brand Buzzar, a dynamic digital marketing agency, is dedicated to helping brands amplify their online presence and drive meaningful engagement. With a team of creative strategists and digital experts, Brand Buzzar offers a comprehensive suite of services tailored to meet the diverse needs of clients across industries. Despite its expertise, Brand Buzzar faced challenges in positioning itself as a top-tier agency and attracting clients in a crowded marketplace.",
       challenges: [
         {
-          title: "Competitive Market",
-          desc: "In a highly competitive skincare market flooded with established brands, Zenio struggled to differentiate itself and capture the attention of discerning consumers.",
+          title: "Establishing Credibility",
+          desc: "In a competitive landscape dominated by established agencies, Brand Buzzar struggled to establish credibility and differentiate its offerings, hindering its ability to attract high-value clients.",
         },
         {
-          title: "Limited Online Visibility",
-          desc: "With limited online visibility, Zenio found it challenging to expand its customer base beyond its existing network, hindering its growth potential in the digital realm.",
+          title: "Generating Leads",
+          desc: "With limited brand visibility, Brand Buzzar found it challenging to generate qualified leads and expand its client base, resulting in slower than anticipated growth.",
         },
       ],
       solutions: [
         {
-          title: "Comprehensive Social Media Strategy",
-          desc: "To address the challenges, Zenio implemented a comprehensive social media strategy encompassing platforms like Instagram, Facebook, and TikTok. Through engaging content, influencer collaborations, and user-generated campaigns, Zenio sought to foster a community of skincare enthusiasts and increase brand awareness.",
+          title: "Strategic Brand Promotion",
+          desc: "To address the challenges, Brand Buzzar embarked on a strategic brand promotion campaign leveraging multiple digital channels. Through targeted email marketing, content marketing, and SEO optimization, Brand Buzzar aimed to increase its visibility among potential clients and position itself as a trusted authority in the digital marketing space.",
         },
         {
-          title: "Targeted Advertising Campaigns",
-          desc: "In addition to organic content, Zenio ran targeted advertising campaigns across social media platforms, leveraging advanced audience targeting and retargeting techniques. These campaigns focused on promoting key product lines, seasonal promotions, and brand values, driving traffic to the website and increasing sales.",
+          title: "Social Media Advertising",
+          desc: "In addition to brand promotion, Brand Buzzar ran targeted social media advertising campaigns across platforms such as LinkedIn, Twitter, and Facebook. These campaigns showcased the agency's expertise and highlighted successful case studies, driving traffic to the website and generating qualified leads.",
         },
       ],
       analytics: [
         {
           id: 1,
-          src: "https://example.com/zenio-analytics-image1.png",
+          src: img11,
         },
         {
           id: 2,
-          src: "https://example.com/zenio-analytics-image2.png",
-        },
-        {
-          id: 3,
-          src: "https://example.com/zenio-analytics-image3.png",
-        },
-        {
-          id: 4,
-          src: "https://example.com/zenio-analytics-image4.png",
-        },
-        {
-          id: 5,
-          src: "https://example.com/zenio-analytics-image5.png",
+          src: img12,
         },
       ],
       conclusion:
-        "Through its innovative social media strategy and targeted advertising campaigns, Zenio - Feel the Skin successfully elevated its online presence and expanded its customer base. By fostering meaningful connections with consumers and delivering exceptional skincare experiences, Zenio has solidified its position as a leading beauty brand. With a commitment to authenticity and quality, Zenio continues to empower individuals to embrace self-care and 'feel the skin' they're in.",
-      social: "https://www.instagram.com/zenio_feel_the_skin/",
+        "Through its strategic brand promotion and social media advertising efforts, Brand Buzzar successfully enhanced its credibility and expanded its client base. By showcasing its expertise and delivering tangible results, Brand Buzzar has positioned itself as a go-to partner for brands seeking innovative digital marketing solutions. With a focus on driving client success and fostering long-term partnerships, Brand Buzzar is poised for continued growth and industry leadership.",
+      social: "https://www.instagram.com/brand_buzzar/",
     },
     {
       id: 3,

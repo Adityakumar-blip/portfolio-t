@@ -11,8 +11,8 @@ const Work = () => {
       link: "1",
     },
     {
-      src: "https://www.zenio.co.in/cdn/shop/files/Zenio-3_8d265451-9342-4515-95ed-959747a24d00_1270x.jpg?v=1708687620",
-      title: "Zenio-Feel the Skin",
+      src: "https://img.freepik.com/premium-vector/man-woman-are-looking-laptop_841014-30098.jpg?size=626&ext=jpg&ga=GA1.1.128595269.1715744696&semt=ais_user",
+      title: "Brand Buzzar - Digital Marketing Agency",
       link: "2",
     },
     {
