@@ -11,7 +11,7 @@ const Work = () => {
       link: "1",
     },
     {
-      src: "https://img.freepik.com/premium-vector/man-woman-are-looking-laptop_841014-30098.jpg?size=626&ext=jpg&ga=GA1.1.128595269.1715744696&semt=ais_user",
+      src: "https://img.freepik.com/free-vector/facebook-post-illustration-notifications_23-2149024883.jpg?size=626&ext=jpg&ga=GA1.1.128595269.1715744696&semt=ais_user",
       title: "Brand Buzzar - Digital Marketing Agency",
       link: "2",
     },
