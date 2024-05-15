@@ -5,6 +5,8 @@ import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
 import img4 from "../assets/img4.jpg";
 import img5 from "../assets/img5.jpg";
+import img6 from "../assets/img6.jpg";
+import img7 from "../assets/img7.jpg";
 import instagram from "../assets/instagram.png";
 
 const Testimonial = ({ props }) => {
@@ -113,7 +115,7 @@ const Testimonial = ({ props }) => {
       ],
       conclusion:
         "Through its innovative social media strategy and targeted advertising campaigns, Zenio - Feel the Skin successfully elevated its online presence and expanded its customer base. By fostering meaningful connections with consumers and delivering exceptional skincare experiences, Zenio has solidified its position as a leading beauty brand. With a commitment to authenticity and quality, Zenio continues to empower individuals to embrace self-care and 'feel the skin' they're in.",
-      social: "https://example.com/zenio-social-media",
+      social: "https://www.instagram.com/zenio_feel_the_skin/",
     },
     {
       id: 3,
@@ -144,28 +146,16 @@ const Testimonial = ({ props }) => {
       analytics: [
         {
           id: 1,
-          src: "https://example.com/analytics-image1.png",
+          src: img6,
         },
         {
           id: 2,
-          src: "https://example.com/analytics-image2.png",
-        },
-        {
-          id: 3,
-          src: "https://example.com/analytics-image3.png",
-        },
-        {
-          id: 4,
-          src: "https://example.com/analytics-image4.png",
-        },
-        {
-          id: 5,
-          src: "https://example.com/analytics-image5.png",
+          src: img7,
         },
       ],
       conclusion:
         "Through targeted social media campaigns and educational content creation, SolutionOne ERP was able to overcome its initial challenges and gain significant traction in the market. By positioning itself as a valuable solution for businesses seeking efficiency and agility, SolutionOne ERP has established itself as a leader in the ERP space. With a continued focus on innovation and customer satisfaction, SolutionOne ERP is poised for sustained growth and success in the ever-evolving business landscape.",
-      social: "https://example.com/solutionone-erp-social-media",
+      social: "https://www.instagram.com/solutiononeerp/",
     },
     ,
   ];
