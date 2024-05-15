@@ -81,6 +81,20 @@ const Testimonial = ({ props }) => {
           src: img10,
         },
       ],
+      gallery: [
+        {
+          id: 1,
+          src: "https://instagram.famd5-4.fna.fbcdn.net/v/t39.30808-6/434685127_336017059462943_7708122091642752127_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNTAweDE4NzUuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.famd5-4.fna.fbcdn.net&_nc_cat=111&_nc_ohc=4QJFe5vOnCwQ7kNvgHQKSuO&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYCBRMO5QrMPSrNDYGnKAUojEiWaZtas0ZQAq2Kj5R1zdA&oe=664A4260&_nc_sid=cf751b",
+        },
+        {
+          id: 2,
+          src: "https://instagram.famd5-3.fna.fbcdn.net/v/t39.30808-6/434660019_332599949804654_1036093643669645088_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMjgweDE2MDAuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.famd5-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=I9YP44OpiSQQ7kNvgFcf_w5&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYB9UYxjSWwdJlDXwUd0HV7HXQzJ6Q55v04SyT0Nb6Vymg&oe=664A48B6&_nc_sid=cf751b",
+        },
+        {
+          id: 3,
+          src: "https://instagram.famd5-3.fna.fbcdn.net/v/t39.30808-6/433016845_332598536471462_2362367706943557693_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMjgweDE2MDAuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.famd5-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=uqla_iS72kwQ7kNvgHWBCRd&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYCIQl5tVE5WgV-hUyqt2t0WGamdnJFjUN0yj-1moHHDnw&oe=664A3945&_nc_sid=cf751b",
+        },
+      ],
       conclusion:
         "In an industry driven by sensory experiences and emotional connections, Al-Muzzamil has emerged as a shining example of how strategic marketing and customer-centricity can propel a brand to success. By harnessing the power of social media, compelling storytelling, and personalized engagement, Al-Muzzamil has not only carved a niche for itself but has also set new standards for excellence in the perfume industry. With a steadfast commitment to innovation and customer satisfaction, Al-Muzzamil is poised to continue its journey towards becoming a global fragrance powerhouse.",
       social: "https://www.instagram.com/almujammilfregrance/",
@@ -121,6 +135,16 @@ const Testimonial = ({ props }) => {
           src: img12,
         },
       ],
+      gallery: [
+        {
+          id: 1,
+          src: "https://instagram.famd5-2.fna.fbcdn.net/v/t39.30808-6/439221086_851781976964556_5994569231666119844_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNTAweDE1MDAuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.famd5-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=38j1zLpPyjMQ7kNvgFBamll&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYAoGO_2KKEtL90M9n9Dki9EG_Ph6AJ1DVVNL0ISPlbMbQ&oe=664A2C67&_nc_sid=cf751b",
+        },
+        {
+          id: 2,
+          src: "https://instagram.famd5-3.fna.fbcdn.net/v/t39.30808-6/439437510_851780240298063_619272067994857398_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNTAweDE1MDAuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.famd5-3.fna.fbcdn.net&_nc_cat=103&_nc_ohc=s8xV-K6FQloQ7kNvgEBLXun&edm=ANTKIIoAAAAA&ccb=7-5&oh=00_AYAred-hYetBeElc3o0BOljcnxcKSvu0AVEAebYoVAl3wg&oe=664A4451&_nc_sid=cf751b",
+        },
+      ],
       conclusion:
         "Through its strategic brand promotion and social media advertising efforts, Brand Buzzar successfully enhanced its credibility and expanded its client base. By showcasing its expertise and delivering tangible results, Brand Buzzar has positioned itself as a go-to partner for brands seeking innovative digital marketing solutions. With a focus on driving client success and fostering long-term partnerships, Brand Buzzar is poised for continued growth and industry leadership.",
       social: "https://www.instagram.com/brand_buzzar/",
@@ -141,6 +165,7 @@ const Testimonial = ({ props }) => {
           desc: "In a crowded market dominated by established players, SolutionOne ERP faced stiff competition, making it challenging to differentiate its offerings and capture market share.",
         },
       ],
+      gallery: [],
       solutions: [
         {
           title: "Strategic Social Media Campaigns",
@@ -171,8 +196,6 @@ const Testimonial = ({ props }) => {
   const { id } = router.query;
 
   const filteredData = data.filter((item) => item.id === parseInt(id));
-
-  console.log("Filtered data: " + JSON.stringify(filteredData), id);
 
   return (
     <div className="p-4 lg:p-10">
@@ -239,6 +262,25 @@ const Testimonial = ({ props }) => {
             </a>
           </div>
         ))}
+      </div>
+      <div>
+        <p className="text-2xl mt-10 text-black">Gallery</p>
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2  gap-4 mt-4">
+          {filteredData[0]?.gallery.length > 0 ? (
+            filteredData[0]?.gallery?.map((item, index) => (
+              <div key={index} className="w-full mb-4">
+                <img
+                  src={item?.src}
+                  className="w-full h-[500px] object-cover rounded-lg"
+                />
+              </div>
+            ))
+          ) : (
+            <p className="text-lg text-gray-500 font-mono">
+              No Images Available
+            </p>
+          )}
+        </div>
       </div>
       <div>
         <p className="text-2xl mt-10 text-black">Results</p>
