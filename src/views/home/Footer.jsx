@@ -32,23 +32,37 @@ const Footer = () => {
 
   return (
     <footer className="p-4">
-      <div className="p-4 rounded-lg bg-black">
+      <div className="p-4 flex items-center justify-center h-[500px] rounded-lg bg-[#e63946]">
         <p
           // ref={textRef}
-          className="text-white  text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] xl:text-[14rem] text-center font-sans "
+          className="text-white  text-[2rem] sm:text-[6rem] md:text-[4rem] lg:text-[12rem] xl:text-[5rem] text-center font-sans "
         >
-          Tannu Singh
+          Get the best out of your brand.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row pt-4 ">
+      <div className="flex flex-col lg:flex-row justify-between pt-10 ">
         <div className="lg:w-1/2 flex flex-col justify-center">
-          <p className="text-black text-2xl lg:text-6xl">Now!</p>
-          <p className="text-black text-2xl lg:text-6xl font-sans">
-            Let's Discuss Your Project
+          <p className="text-black text-2xl lg:text-6xl">Contact!</p>
+          <p className="text-black mt-6 text-2xl lg:text-4xl font-mono">
+            tannu3288044@gmail.com
+          </p>
+          <p className="text-black mt-4 text-2xl lg:text-4xl font-mono">
+            8447576338
           </p>
         </div>
         <div className="lg:w-1/2">
-          <form className="max-w-md mx-auto">
+          <div>
+            <p className="text-black text-2xl lg:text-6xl">Follow ME</p>
+            <p className="text-black cursor-pointer mt-6 text-2xl lg:text-4xl font-mono">
+              <a
+                href="https://www.linkedin.com/in/tannu-singh-029ba6213"
+                target="__blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
+          {/* <form className="max-w-md mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative z-0 mb-5 group">
                 <input
@@ -66,7 +80,6 @@ const Footer = () => {
                   Email address
                 </label>
               </div>
-              {/* Other input fields here */}
             </div>
             <button
               type="submit"
@@ -74,7 +87,7 @@ const Footer = () => {
             >
               Submit
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </footer>

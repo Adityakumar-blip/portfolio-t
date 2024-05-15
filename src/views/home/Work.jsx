@@ -6,25 +6,25 @@ const Work = () => {
   const router = useRouter();
   const data = [
     {
-      src: "https://images.unsplash.com/photo-1682932006997-91aa688fb5c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyZnVtZSUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
-      title: "Al-Mujjamil",
+      src: "https://almujammilfragrance.com/cdn/shop/products/summer69.jpg?v=1680714073&width=750",
+      title: "Al-Mujammil",
       link: "1",
     },
     {
-      src: "https://images.unsplash.com/photo-1630082900894-edbd503588f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFNoYW1wb298ZW58MHx8MHx8fDA%3D",
+      src: "https://www.zenio.co.in/cdn/shop/files/Zenio-3_8d265451-9342-4515-95ed-959747a24d00_1270x.jpg?v=1708687620",
       title: "Zenio-Feel the Skin",
       link: "2",
     },
     {
-      src: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhdGNoZXN8ZW58MHx8MHx8fDA%3D",
+      src: "https://img.freepik.com/free-vector/gradient-erp-illustration_23-2149368728.jpg?size=626&ext=jpg",
       title: "SolutionOne ERP",
       link: "3",
     },
-    {
-      src: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Bholanath Ayurveda",
-      link: "4",
-    },
+    // {
+    //   src: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGpld2VsbGVyeXxlbnwwfHwwfHx8MA%3D%3D",
+    //   title: "Bholanath Ayurveda",
+    //   link: "4",
+    // },
   ];
   return (
     <div className="px-4">
@@ -41,7 +41,7 @@ const Work = () => {
               onClick={() => {
                 router.push({
                   pathname: "/case-study",
-                  query: image.link,
+                  query: { id: image.link },
                 });
               }}
             />

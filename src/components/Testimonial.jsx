@@ -63,12 +63,118 @@ const Testimonial = ({ props }) => {
         "In an industry driven by sensory experiences and emotional connections, Al-Muzzamil has emerged as a shining example of how strategic marketing and customer-centricity can propel a brand to success. By harnessing the power of social media, compelling storytelling, and personalized engagement, Al-Muzzamil has not only carved a niche for itself but has also set new standards for excellence in the perfume industry. With a steadfast commitment to innovation and customer satisfaction, Al-Muzzamil is poised to continue its journey towards becoming a global fragrance powerhouse.",
       social: "https://www.instagram.com/almujammilfregrance/",
     },
-    {},
+    {
+      id: 2,
+      name: "Zenio - Feel the Skin",
+      img: "https://www.zenio.co.in/cdn/shop/files/zenio_web_banner_below_abt_us_2_a.jpg?v=1697538257&width=1500",
+      intro:
+        "Zenio - Feel the Skin, a luxurious skincare brand, has redefined beauty rituals with its holistic approach to skincare. Offering a range of premium products crafted from natural ingredients, Zenio embodies the essence of self-care and rejuvenation. Despite its exceptional products, Zenio faced challenges in reaching its target audience and establishing a strong online presence.",
+      challenges: [
+        {
+          title: "Competitive Market",
+          desc: "In a highly competitive skincare market flooded with established brands, Zenio struggled to differentiate itself and capture the attention of discerning consumers.",
+        },
+        {
+          title: "Limited Online Visibility",
+          desc: "With limited online visibility, Zenio found it challenging to expand its customer base beyond its existing network, hindering its growth potential in the digital realm.",
+        },
+      ],
+      solutions: [
+        {
+          title: "Comprehensive Social Media Strategy",
+          desc: "To address the challenges, Zenio implemented a comprehensive social media strategy encompassing platforms like Instagram, Facebook, and TikTok. Through engaging content, influencer collaborations, and user-generated campaigns, Zenio sought to foster a community of skincare enthusiasts and increase brand awareness.",
+        },
+        {
+          title: "Targeted Advertising Campaigns",
+          desc: "In addition to organic content, Zenio ran targeted advertising campaigns across social media platforms, leveraging advanced audience targeting and retargeting techniques. These campaigns focused on promoting key product lines, seasonal promotions, and brand values, driving traffic to the website and increasing sales.",
+        },
+      ],
+      analytics: [
+        {
+          id: 1,
+          src: "https://example.com/zenio-analytics-image1.png",
+        },
+        {
+          id: 2,
+          src: "https://example.com/zenio-analytics-image2.png",
+        },
+        {
+          id: 3,
+          src: "https://example.com/zenio-analytics-image3.png",
+        },
+        {
+          id: 4,
+          src: "https://example.com/zenio-analytics-image4.png",
+        },
+        {
+          id: 5,
+          src: "https://example.com/zenio-analytics-image5.png",
+        },
+      ],
+      conclusion:
+        "Through its innovative social media strategy and targeted advertising campaigns, Zenio - Feel the Skin successfully elevated its online presence and expanded its customer base. By fostering meaningful connections with consumers and delivering exceptional skincare experiences, Zenio has solidified its position as a leading beauty brand. With a commitment to authenticity and quality, Zenio continues to empower individuals to embrace self-care and 'feel the skin' they're in.",
+      social: "https://example.com/zenio-social-media",
+    },
+    {
+      id: 3,
+      name: "SolutionOne ERP",
+      img: "https://img.freepik.com/free-vector/gradient-erp-illustration_23-2149373210.jpg?size=626&ext=jpg&ga=GA1.1.128595269.1715744696&semt=sph",
+      intro:
+        "SolutionOne ERP, a comprehensive enterprise resource planning solution, has revolutionized the way businesses manage their operations. With its suite of integrated modules spanning from finance to human resources, SolutionOne ERP offers unparalleled efficiency and agility to organizations of all sizes. Despite its robust features, SolutionOne ERP faced challenges in reaching its target audience and maximizing its market potential.",
+      challenges: [
+        {
+          title: "Limited Market Penetration",
+          desc: "Despite its advanced features, SolutionOne ERP struggled to penetrate new markets and gain traction among its target audience, leading to slower than anticipated growth.",
+        },
+        {
+          title: "Competitive Landscape",
+          desc: "In a crowded market dominated by established players, SolutionOne ERP faced stiff competition, making it challenging to differentiate its offerings and capture market share.",
+        },
+      ],
+      solutions: [
+        {
+          title: "Strategic Social Media Campaigns",
+          desc: "To address the challenges, SolutionOne ERP launched strategic social media campaigns across platforms like LinkedIn, Twitter, and industry-specific forums. These campaigns focused on highlighting the unique features and benefits of SolutionOne ERP, targeting key decision-makers and influencers within the target market.",
+        },
+        {
+          title: "Educational Content Creation",
+          desc: "Recognizing the need to educate potential customers about the value proposition of SolutionOne ERP, the marketing team developed educational content such as whitepapers, case studies, and how-to guides. This content positioned SolutionOne ERP as a thought leader in the ERP space and helped address common pain points faced by businesses.",
+        },
+      ],
+      analytics: [
+        {
+          id: 1,
+          src: "https://example.com/analytics-image1.png",
+        },
+        {
+          id: 2,
+          src: "https://example.com/analytics-image2.png",
+        },
+        {
+          id: 3,
+          src: "https://example.com/analytics-image3.png",
+        },
+        {
+          id: 4,
+          src: "https://example.com/analytics-image4.png",
+        },
+        {
+          id: 5,
+          src: "https://example.com/analytics-image5.png",
+        },
+      ],
+      conclusion:
+        "Through targeted social media campaigns and educational content creation, SolutionOne ERP was able to overcome its initial challenges and gain significant traction in the market. By positioning itself as a valuable solution for businesses seeking efficiency and agility, SolutionOne ERP has established itself as a leader in the ERP space. With a continued focus on innovation and customer satisfaction, SolutionOne ERP is poised for sustained growth and success in the ever-evolving business landscape.",
+      social: "https://example.com/solutionone-erp-social-media",
+    },
+    ,
   ];
 
-  const id = router.query;
+  const { id } = router.query;
 
-  const filteredData = data.filter((item) => item.id !== id);
+  const filteredData = data.filter((item) => item.id === parseInt(id));
+
+  console.log("Filtered data: " + JSON.stringify(filteredData), id);
 
   return (
     <div className="p-4 lg:p-10">
